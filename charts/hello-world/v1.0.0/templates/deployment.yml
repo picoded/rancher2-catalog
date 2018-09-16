@@ -13,6 +13,6 @@ spec:
       name: hello-world
     spec:
       containers:
-        - name: $
+        - name: hello-world
           image: picoded/hello-world
           imagePullPolicy: Always
