@@ -1,0 +1,39 @@
+#
+# The official kubernetes chart configuration
+#
+
+# chart API version, currently only v1 supported
+apiVersion: "v1"
+
+# chart name
+name:  hello-world
+
+# Version of the chart (not the app)
+# has to be semver2 compatible
+version: 1.0.0
+
+# [OPTIONAL] Chart project url (github?) and its icon (svg?)
+home:  https://github.com/picoded/rancher2-catalog
+icon:  https://cdn-1.wp.nginx.com/wp-content/uploads/2018/08/icon-NGINX-OSS-2.svg
+
+# [OPTIONAL] list of maintainers, 
+
+# maintainers: 
+#   - name: "Eugene Cheah"
+#     email: "hello@uilicious.com" # Optional email (btw that isnt my actual email)
+#     url: "https://uilicious.com" # Optional url for the maintainer
+
+# [OPTIONAL] A single-sentence description of this project
+# # description: Hello worl example of a rancher 2 catalog
+
+# [OPTIONAL] source code linkage (including sup packages such as nginx itself), 
+# use this if home is not given (or differs drastically)
+# # sources:
+# #   - https://github.com/picoded/rancher2-catalog
+
+# [OPTIONAL] Version of the app (inside the chart) 
+# personally I avoid usage cause it can get confusing
+# # appVersion: 1.15.3
+
+# [OPTIONAL] Used to indicate deprecated charts
+# # deprecated: false

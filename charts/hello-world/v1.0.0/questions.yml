@@ -1,0 +1,37 @@
+#
+# This file is rancher 2 specific
+#
+# Configuration UI that customizes values.yml
+#
+
+# Category used to filter the chart search list
+categories:
+  - Server
+
+# Questions, and possibly subquestions to for configuration
+# of the chart deployment.
+questions:
+  # Variable modified (for this question)
+  - variable: deployment.hasCustomName
+    # Grouping of questions
+    group: server-config
+    # Label, description and requirement
+    label: 'Has custom name?'
+    description: 'enable custom server name'
+    required: true
+    # Default value and type
+    default: false
+    type: boolean
+    # Subeqeustion condition
+    show_subquestion_if: true
+    # Subquestion to conditionally show, if the above is "true"
+    # note that subequestions are not allowed to have subquestions
+    #
+    # Also it makes no sense to do a boolean check for a single value,
+    # this is a simply a hello world for sub values as well.
+    subquestions:
+      - variable: deployment.customName
+        default: "Nginx"
+        description: 'custom server name'
+        type: string
+        label: 'custom server name'
